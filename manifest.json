@@ -1,9 +1,12 @@
 {
     "name": "More Tweets!",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Automatically pull more tweets when scrolled to the bottom of a user's Twitter page",
     "content_scripts": [{
-        "matches": ["http://*.twitter.com/*"],
+        "matches": [
+            "http://*.twitter.com/*",
+            "https://*.twitter.com/*"
+        ],
         "js": ["contentscript.js"]
     }],
     "icons": {
